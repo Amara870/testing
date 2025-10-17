@@ -1,0 +1,172 @@
+/* CSS to position main, body, and footer */
+body {
+    display:grid;
+    /* give leftover space to main, sticking header and footer to top and bottom */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+h1 {
+    color: white; 
+    text-align:center; 
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+nav {
+    /* centers nav links */
+    text-align: center;
+    /* gives a bit of space between it and the calendar */
+    margin-bottom: 2%;
+}
+
+#logo {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Automatically centers horizontally */
+    max-width: 100%; /* Ensures responsiveness */
+    margin-bottom: 2%;
+}
+
+.calendar {
+    text-align: left; 
+    position: absolute; 
+    margin: 10px;
+}
+
+
+
+.updates {
+    /* set to flex box */
+    justify-content: center;
+    display:flex;
+    overflow-x: auto;
+    height: 300px;
+    /* prevents wrapping */
+    white-space: nonwrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.updates td {
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 80px;
+    text-align:center;
+    flex-direction: column;
+    box-shadow: 10px 10px rgb(243, 138, 138);
+    
+}
+
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;  
+    justify-self: center;  
+    width: 30%;    
+}
+
+#article1 {
+    background-color: aliceblue;
+    border: 2px solid black;
+    text-align: center;
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px rgb(243, 138, 138);
+}
+
+#article2 {
+    background-color: aliceblue;
+    border: 2px solid black;
+    text-align: center;
+    height: 30%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px rgb(243, 138, 138);
+}
+
+#article3 {
+    background-color: aliceblue;
+    border: 2px solid black;
+    text-align: center;
+    height: 30%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px rgb(243, 138, 138);
+}
+
+.socials a, p {
+    /* align socials links */
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+/*image section
+.images {
+display: flex;
+flex-direction: column
+justify-self: right;
+}*/
+
+/* Extra small and small devices (phones, portrait tablets and large phones, 768px and down) */
+@media (max-width: 768px) {
+    .calendar {
+        text-align: center; 
+        position: static; 
+    }
+
+    .articles {
+        justify-self: center; 
+    }
+
+    /*image section
+    .images {
+    justify-self: center;
+    flex-direction:row;
+    }*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .calendar {
+        text-align: left; 
+        position: absolute; 
+        margin: 10px;
+    }
+
+    .articles {
+        justify-self: center; 
+    }
+
+    /*image section
+    .images {
+    justify-self: center;
+    flex-direction:row;
+    }*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .calendar {
+        text-align: left; 
+        position: absolute; 
+        margin: 10px;
+    }
+
+    .articles {  
+        justify-self: center;     
+    }
+
+    /* image section
+    .images {
+    justify-self: right;
+    flex-direction: column;
+    }*/
+}
