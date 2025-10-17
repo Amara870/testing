@@ -1,0 +1,126 @@
+<!--Declare Dotcype-->
+<!DOCTYPE html>
+<!--Set coding langauge and background color-->
+<html lang="en">
+    <head>
+        <meta charset ="UFT-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Uat News</title>
+        <!--Link stylesheet-->
+        <link rel="stylesheet" href="E:\School\PDS\news.css" >
+
+        <!--JavaScirpt to autoscroll through flexbox-->
+        <script>
+            const table = document.querySelector(".table");
+            let scrollAmount = 0;
+            const scrollSpeed = 2;
+            const scrollInterval = 20;
+
+            function autoScroll() {
+                if (table.scrollwidth > table.clientWidth) {
+                    table.scrollLeft += scrollSpeed;
+                    if (table.scrollLeft >= (table.scrollWidth - table.clientWidth)) {
+                        table.scrollLeft = 0;
+                    }
+                    else if (table.scrollHeight > table.clientHeight) {
+                        table.scrollTop += scrollSpeed;
+                        if (table.scrollTop >= (table.scrollHeight - table.clientHeight)) {
+                            table.scrollTop = 0;
+                        }
+                    }
+                }
+            }
+
+            let scrollTimer = setInterval(autoScroll, scrollInterval);
+            
+            table.addEventListener("mouseenter", () => {
+                clearInterval(scrollTimer);
+            })
+
+            table.addEventListener("mouseleave", () => {
+                scrollTimer = setInterval(autoScroll, scrollInterval);
+            })
+
+            autoScroll();
+        </script>
+    </head>
+
+    <body>
+        <header style="background-color: rgb(84, 83, 83);">
+            <!--Page title-->
+            <h1>News Updates</h1>
+            <!--Website navigation-->
+            <nav>
+                <!---->
+                <a href="index.html" style="color: white;">Homepage <b>|</b></a>
+                <!---->
+                <a href="competitions.html" style="color: white;">Competitions <b>|</b></a>
+                <!---->
+                <a href="gallery.html" style="color: white;">Gallery <b>|</b></a>
+                <!---->
+                <a href="contact.html" style="color: white;">Contacts</a>
+            </nav>
+            <!--UAT Logo, gave it a class to help style later-->
+            <img src="./media/images/UAT_LOGO.png" id="logo" width=100>
+
+            
+        </header>
+
+        <main style="background-color: rgba(200, 193, 193, 0.642);">
+            <!--Flex container for weekly highlights-->
+            <table class="updates">
+                <tr>
+                    <td>
+                        <a href="">A</a>
+                    </td>
+                    <td>
+                        <a href="">B</a>
+                    </td>
+                    <td>
+                        <a href="">C</a>
+                    </td>
+                    <td>
+                        <a href="">D</a>
+                    </td>
+                    <td>
+                        <a href="">E</a>
+                    </td>
+                </tr>
+            </table>
+            <!--Monthly UAT events calender-->
+            <div class="calendar">
+                <!--iframe google calendar link-->
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FPhoenix&showPrint=0&src=dWF0Y2x1YnNAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border:solid 5px #636262" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <!--UAT News articles, updates, promos-->
+            <div class="articles">
+                <article id="article1">
+                    <a href="">Article Link</a>
+                </article>
+
+                <article id="article2">
+                    <a href="">Article Link</a>
+                </article>
+
+                <article id="article3">
+                    <a href="">Article Link</a>
+                </article>
+            </div>
+        </main>
+
+    </body>
+
+    <!--UAT Socials links, legal text, other links-->
+    <footer style="background-color: rgb(84, 83, 83);">
+        <socials class="socials">
+            <table>
+                <a href="https://www.instagram.com/uatedu/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@uatedu" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://www.youtube.com/user/UATProductions" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </table>
+        </socials>
+        <p>
+            Copyright UAT 2025
+        </p>
+    </footer>
+</html>
