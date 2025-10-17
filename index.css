@@ -142,7 +142,7 @@ justify-self: right;
     }
 
     .articles {
-        justify-self: center; 
+        justify-self: right; 
     }
 
     /*image section
@@ -171,4 +171,5 @@ justify-self: right;
     flex-direction: column;
     }*/
 }
+
 
