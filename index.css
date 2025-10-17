@@ -123,6 +123,7 @@ justify-self: right;
 
     .articles {
         justify-self: center; 
+        width: 100%;
     }
 
     /*image section
@@ -170,3 +171,4 @@ justify-self: right;
     flex-direction: column;
     }*/
 }
+
