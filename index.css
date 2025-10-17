@@ -114,7 +114,7 @@ flex-direction: column
 justify-self: right;
 }*/
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
     .calendar {
         text-align: center; 
         position: static; 
@@ -151,5 +151,6 @@ justify-self: right;
     }*/
 
 }
+
 
 
