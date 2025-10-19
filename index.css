@@ -134,7 +134,7 @@ justify-self: right;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     .calendar {
         text-align: left; 
         position: absolute; 
@@ -171,6 +171,7 @@ justify-self: right;
     flex-direction: column;
     }*/
 }
+
 
 
 
