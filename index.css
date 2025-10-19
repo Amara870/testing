@@ -115,7 +115,7 @@ justify-self: right;
 }*/
 
 /* Extra small and small devices (phones, portrait tablets and large phones, 768px and down) */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .calendar {
         text-align: center; 
         position: static; 
@@ -134,7 +134,7 @@ justify-self: right;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     .calendar {
         text-align: left; 
         position: absolute; 
@@ -153,7 +153,7 @@ justify-self: right;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1800px) 
+@media only screen and (min-width: 1700px) 
 {
     .calendar {
         text-align: left; 
@@ -171,6 +171,7 @@ justify-self: right;
     flex-direction: column;
     }*/
 }
+
 
 
 
