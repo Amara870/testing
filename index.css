@@ -115,7 +115,7 @@ justify-self: right;
 }*/
 
 /* Extra small and small devices (phones, portrait tablets and large phones, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .calendar {
         text-align: center; 
         position: static; 
@@ -171,6 +171,7 @@ justify-self: right;
     flex-direction: column;
     }*/
 }
+
 
 
 
