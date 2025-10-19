@@ -1,13 +1,13 @@
 <!--Declare Dotcype-->
 <!DOCTYPE html>
 <!--Set coding langauge and background color-->
-<html lang="en">
+<html lang="en" style="background-color: rgb(255, 255, 255);">
     <head>
         <meta charset ="UFT-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Uat News</title>
         <!--Link stylesheet-->
-        <link rel="stylesheet" href="index.css" >
+        <link rel="stylesheet" href="news.css" >
 
         <!--JavaScirpt to autoscroll through flexbox-->
         <script>
@@ -46,11 +46,11 @@
     </head>
 
     <body>
-        <header style="background-color: rgb(84, 83, 83);">
+        <header style="background-color:#9e1c35;">
             <!--Page title-->
             <h1>News Updates</h1>
             <!--Website navigation-->
-            <nav>
+            <nav style="color: white;">
                 <!---->
                 <a href="index.html" style="color: white;">Homepage <b>|</b></a>
                 <!---->
@@ -61,12 +61,12 @@
                 <a href="contact.html" style="color: white;">Contacts</a>
             </nav>
             <!--UAT Logo, gave it a class to help style later-->
-            <img src="./media/images/UAT_LOGO.png" id="logo" width=100>
+            <img src="UAT_LOGO.png" id="logo" width=100>
 
             
         </header>
 
-        <main style="background-color: rgba(200, 193, 193, 0.642);">
+        <main style="background-color: #ffffff;">
             <!--Flex container for weekly highlights-->
             <table class="updates">
                 <tr>
@@ -90,28 +90,50 @@
             <!--Monthly UAT events calender-->
             <div class="calendar">
                 <!--iframe google calendar link-->
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FPhoenix&showPrint=0&src=dWF0Y2x1YnNAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border:solid 5px #636262" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FPhoenix&showPrint=0&src=dWF0Y2x1YnNAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" style="border:solid 5px #666666" width="600" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
             <!--UAT News articles, updates, promos-->
             <div class="articles">
                 <article id="article1">
                     <a href="">Article Link</a>
+                    <p style="color: black;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </article>
 
                 <article id="article2">
                     <a href="">Article Link</a>
+                    <p style="color: black;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </article>
 
                 <article id="article3">
                     <a href="">Article Link</a>
+                    <p style="color: black;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </article>
+
+                <article id="article4">
+                    <a href="">Article Link</a>
+                    <p style="color: black;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </article>
             </div>
-        </main>
 
+            <div class="gallery">
+                <img id="placeholder" src="UAT_LOGO.png">
+                <img id="placeholder2" src="UAT_LOGO.png">
+                <img id="placeholder3" src="UAT_LOGO.png">
+                <img id="placeholder4" src="UAT_LOGO.png">
+            </div>
+        </main>
     </body>
 
     <!--UAT Socials links, legal text, other links-->
-    <footer style="background-color: rgb(84, 83, 83);">
+    <footer style="background-color: #666666;">
         <socials class="socials">
             <table>
                 <a href="https://www.instagram.com/uatedu/" target="_blank" rel="noopener noreferrer">Instagram</a>
